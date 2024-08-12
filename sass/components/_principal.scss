@@ -1,0 +1,112 @@
+.imagenPrincipal {
+    width: 100%;
+    height: auto;
+  }
+  
+  .sectionPrincipal {
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+  
+    h1 {
+      margin: 0 0 20px 0;
+      font-size: 2.5em;
+      color: #333;
+    }
+  
+    button {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-bottom: 20px;
+  
+      a {
+        color: white;
+        text-decoration: none;
+      }
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+  
+  .serviciosPrincipal {
+    padding: 20px;
+    text-align: center;
+  
+    h2 {
+      margin: 0 0 20px 0;
+      font-size: 2.5em;
+      color: #ffffff;
+    }
+  }
+  
+  .serviciosIndex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+    article {
+      position: relative;
+      width: 30%;
+      margin: 10px;
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  
+    h3 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      margin: 0;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .sectionPrincipal {
+      h1 {
+        font-size: 2em;
+      }
+  
+      button {
+        padding: 10px;
+        font-size: 14px;
+      }
+    }
+  
+    .serviciosPrincipal h2 {
+      font-size: 1.5em;
+    }
+  
+    .serviciosIndex {
+      gap: 10px;
+  
+      article {
+        max-width: 100%;
+      }
+  
+      h3 {
+        font-size: 1em;
+      }
+    }
+  }
+  

@@ -122,26 +122,32 @@ h1{
     padding: 20px;
     background-color: #f4f4f4;
 }
+
 .tituloContacto {
     text-align: center;
     margin-bottom: 20px;
 }
+
 .contact-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
 }
+
 .contact-container section {
     flex: 1;
     margin: 10px;
+    min-width: 300px;
 }
+
 .contact-form {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .contact-form h2 {
     margin-top: 0;
     margin-bottom: 20px;
@@ -149,12 +155,14 @@ h1{
     color: #333;
     text-align: center;
 }
+
 .contact-form label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
     color: #333;
 }
+
 .contact-form input, .contact-form textarea {
     width: 100%;
     padding: 10px;
@@ -163,10 +171,12 @@ h1{
     border-radius: 4px;
     font-size: 16px;
 }
+
 .contact-form textarea {
     height: 100px;
     resize: vertical;
 }
+
 .contact-form button {
     background-color: #007BFF;
     color: white;
@@ -177,9 +187,11 @@ h1{
     cursor: pointer;
     width: 100%;
 }
+
 .contact-form button:hover {
     background-color: #0056b3;
 }
+
 .mapaContacto iframe {
     width: 100%;
     height: 450px;
@@ -188,24 +200,17 @@ h1{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-@media (min-width: 768px) {
+/* Estilos responsive */
+@media (max-width: 768px) {
     .contact-container {
-        flex-direction: row;
-        gap: 20px; /* Espacio entre secciones en pantallas más grandes */
+        flex-direction: column;
     }
 
     .contact-container section {
-        flex: 1;
-    }
-    
-    .contact-form {
-        flex: 2;
-    }
-
-    .mapaContacto iframe {
-        height: 500px; /* Ajustar altura del mapa en pantallas más grandes */
+        margin: 10px 0;
     }
 }
+
 
 @media (min-width: 992px) {
     .contact-form h2 {
@@ -249,7 +254,7 @@ footer {
     text-align: right;
 }
 
-/* Estilos para los enlaces */
+
 footer a {
     color: white;
     text-decoration: none;
@@ -259,7 +264,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Estilos para los íconos sociales */
+
 .footer-center section {
     display: inline-block;
     margin: 0 10px;
@@ -348,7 +353,7 @@ footer a:hover {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex: 1 1 300px; /* Flex-grow, flex-shrink, and flex-basis */
+    flex: 1 1 300px; 
     max-width: 600px;
     box-sizing: border-box;
 }
@@ -397,7 +402,7 @@ footer a:hover {
     }
 }
 
-/* General Styles */
+
 .mainPportofolio {
     padding: 20px;
     background-color: #f9f9f9;

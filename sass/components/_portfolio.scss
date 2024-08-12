@@ -1,0 +1,30 @@
+.mainPportofolio {
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+  
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #007BFF;
+    }
+  
+    section {
+      text-align: center;
+      margin-bottom: 40px;
+  
+      h2 {
+        font-size: 2em;
+        color: #007BFF;
+      }
+    }
+  }
+  
+  .portfolioClientes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
